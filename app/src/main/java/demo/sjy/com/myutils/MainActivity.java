@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 
 import demo.sjy.com.myutils.demo.ReflectDemo1;
 import demo.sjy.com.myutils.utils.ClassUtils;
-import demo.sjy.com.myutils.utils.MLog;
+import demo.sjy.com.myutils.utils.Loger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void reflect0() {
         String s = ClassUtils.getAllDeclaredMethodsAndParams("Hello");
-        MLog.d("获取String类的信息=" + s);
+        Loger.d("获取String类的信息=" + s);
         String a = ClassUtils.getAllMethodsAndParams(1);
-        MLog.d("获取int类的信息=" + a);
+        Loger.d("获取int类的信息=" + a);
     }
 
     private void reflect1() {
