@@ -3,11 +3,12 @@ package demo.sjy.com.myutils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.sjy.utils.ClassUtils;
+import com.sjy.utils.Logger;
+
 import java.lang.reflect.Method;
 
 import demo.sjy.com.myutils.demo.ReflectDemo1;
-import demo.sjy.com.myutils.utils.ClassUtils;
-import demo.sjy.com.myutils.utils.Loger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void reflect0() {
         String s = ClassUtils.getAllDeclaredMethodsAndParams("Hello");
-        Loger.d("获取String类的信息=" + s);
+        Logger.d("获取String类的信息=" + s);
         String a = ClassUtils.getAllMethodsAndParams(1);
-        Loger.d("获取int类的信息=" + a);
+        Logger.d("获取int类的信息=" + a);
     }
 
     private void reflect1() {

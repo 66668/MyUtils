@@ -2,13 +2,14 @@ package demo.sjy.com.myutils;
 
 import android.app.Application;
 
-import demo.sjy.com.myutils.utils.Loger;
+import com.sjy.utils.Logger;
+
 
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
 
-        Loger.init(true, "SJY");
+        Logger.init(true, "SJY");
     }
 }

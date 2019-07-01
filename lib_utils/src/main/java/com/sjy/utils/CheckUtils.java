@@ -1,4 +1,4 @@
-package demo.sjy.com.myutils.utils;
+package com.sjy.utils;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;

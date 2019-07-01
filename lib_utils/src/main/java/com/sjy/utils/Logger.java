@@ -1,4 +1,4 @@
-package demo.sjy.com.myutils.utils;
+package com.sjy.utils;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -12,7 +12,7 @@ import android.util.Log;
  * 在代码中要打印log,就直接Loger.d(....).
  */
 
-public class Loger {
+public class Logger {
     public static boolean DEBUG = false;
     private static String TAG = "SJY";
     private static final int LOG_I = 0;
